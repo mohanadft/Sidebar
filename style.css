@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f1f5f8;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.25s linear;
+}
+
+.sidebar.active {
+  width: 380px;
+}
+
+.sidebar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.sidebar h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar h1 span {
+  color: steelblue;
+}
+
+.sidebar .header button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.sidebar .header i {
+  font-size: 40px;
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+.sidebar .header button:hover i {
+  transform: rotate(270deg);
+}
+
+.navbar {
+  width: 100%;
+  height: 70%;
+}
+
+.navbar .nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.navbar .nav-list li {
+  display: block;
+  transition: all 0.4s linear;
+  font-size: 35px;
+}
+
+.navbar .nav-list li:hover {
+  background-color: steelblue;
+}
+
+.navbar .nav-list li a:hover {
+  margin-left: 5px;
+}
+
+.navbar .nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 10px;
+  transition: 0.3s all ease-in-out;
+  letter-spacing: 2px;
+  display: block;
+  width: 100%;
+}
+
+.social-media {
+  width: 100%;
+  padding: 10px;
+}
+
+.social-media ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.social-media ul li a {
+  color: steelblue;
+  font-size: 30px;
+  padding: 10px;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  float: right;
+}
+
+.toggle i {
+  font-size: 70px;
+  color: steelblue;
+}
